@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Texts Comparison</title>
+    <style>
+        table {
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        td {
+            width: 50%;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        th {
+            width: 50%;
+            border: 1px solid black;
+        }
+        .deleted {
+            background-color: darkgray;
+        }
+        .inserted {
+            background-color: darkseagreen;
+        }
+        .changed {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr style="border-bottom: 1px solid black;">
+        <th>Old</th>
+        <th>New</th>
+    </tr>
+    ${tableDataHere}
+</table>
+</body>
+</html>

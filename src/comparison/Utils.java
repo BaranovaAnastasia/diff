@@ -13,6 +13,7 @@ import java.util.Objects;
 public class Utils {
     /**
      * Reads all lines from the file at the passed path.
+     * Ignores empty and blank lines.
      *
      * @return List of read lines.
      * @throws NullPointerException  If passed path is null.
